@@ -1,0 +1,203 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #339eff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.main-content {
+    background-color: #e0e7ee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.cards-box {
+    background-color: #339eff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1240px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    flex: 1 1 calc(45% - 40px); /* Adjust width for slightly bigger cards */
+    min-width: 250px; 
+    max-width: 350px; 
+    padding: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2); 
+    background-color: #37eb0f; 
+}
+
+.graphs-box {
+    background-color: #339eff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1240px; 
+    margin-bottom: 20px;
+}
+
+.graphs-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.graph-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.graph-container h2 {
+    margin-top: 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.graph-container > * {
+    width: 100%;
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+.students-box {
+    background-color: #339eff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1240px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.students-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.students-container h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: white; 
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: black; 
+}
+
+table th {
+    background-color: white; 
+    color: black; 
+}
+
+table tr:nth-child(even) {
+    background-color: white; /* Set even row background color to white */
+}
+
+table tr:hover {
+    background-color: #f2f2f2; /* Set hover background color to light grey */
+}
+
+footer {
+    background-color: #339eff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: auto; 
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(100% - 40px);
+        max-width: 100%;
+    }
+
+    .graph-container {
+        flex: 1 1 calc(100% - 40px); 
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .students-container h2 {
+        font-size: 18px;
+    }
+
+    table th, table td {
+        padding: 6px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
